@@ -1,7 +1,7 @@
 <template>
     <div class="center">
         <v-row>
-            <v-col cols="10" offset="1">
+            <v-col cols="10" sm="6" md="4" offset="1" offset-md="4" offset-sm="3">
                 <v-avatar size="56">
                     <v-img src="@/assets/stockphoto.jpg"></v-img>
                 </v-avatar>
