@@ -6,7 +6,7 @@
                     <v-img src="@/assets/stockphoto.jpg"></v-img>
                 </v-avatar>
                 <v-text-field label="Username"></v-text-field>
-                <v-text-field label="Password"></v-text-field>
+                <v-text-field label="Password" type="password"></v-text-field>
                 <v-btn block> Login</v-btn>
             </v-col>
         </v-row>
