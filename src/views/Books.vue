@@ -1,5 +1,6 @@
 <template>
     <div>
+        <app-header @add= "$router.push('/books/0')" title="Books" @search="seachInBooks($event)"></app-header>
         <v-row>
             <v-col cols="10" sm="8" md="8" offset="1" offset-md="2" offset-sm="2">
                 <v-list dense>
@@ -49,13 +50,25 @@
 </template>
 
 <script>
+import AppHeader from '@/components/AppHeader.vue';
 import booksList from '@/data/books.json'
 export default {
+    components: {
+        AppHeader,
+    },
     data() {
         return {
             books: booksList,
         };
     },
+    methods: {
+        seachInBooks(searchText){
+            if(searchText){
+                this.books = booksList.filter(rec => rec.title.toLowerCase().includes(searchText.toLowerCase()))
+            }
+
+        }
+    }
 }
 </script>
 
