@@ -38,6 +38,11 @@ const routes = [
     path: '/books/:id',
     name: 'booksedit',
     component: () => import('../views/BookEdit.vue')
+  },
+  {
+    path: '/authors/:id',
+    name: 'authorsedit',
+    component: () => import('../views/AuthorEdit.vue')
   }
 ]
 
